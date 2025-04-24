@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C9AAD5CE-5632-45FF-AF4C-5F4325A8A431}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Dictionary_Management_System</RootNamespace>
+    <AssemblyName>Dictionary_Management_System</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DbDictionaryManagementSystemDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDictionaryManagementSystemDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DbDictionaryManagementSystemDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDictionaryManagementSystemDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DbDictionaryManagementSystemDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDictionaryManagementSystemDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DbDictionaryManagementSystemDataSet3.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DbDictionaryManagementSystemDataSet3.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAnalysis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAnalysis.Designer.cs">
+      <DependentUpon>FrmAnalysis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmMainMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmMainMenu.Designer.cs">
+      <DependentUpon>FrmMainMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuiz.Designer.cs">
+      <DependentUpon>FrmQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmQuizSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmQuizSettings.Designer.cs">
+      <DependentUpon>FrmQuizSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWordAdding.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWordAdding.Designer.cs">
+      <DependentUpon>FrmWordAdding.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWordDetail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWordDetail.Designer.cs">
+      <DependentUpon>FrmWordDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmWordViewing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmWordViewing.Designer.cs">
+      <DependentUpon>FrmWordViewing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FrmAnalysis.resx">
+      <DependentUpon>FrmAnalysis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmMainMenu.resx">
+      <DependentUpon>FrmMainMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuiz.resx">
+      <DependentUpon>FrmQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmQuizSettings.resx">
+      <DependentUpon>FrmQuizSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWordAdding.resx">
+      <DependentUpon>FrmWordAdding.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWordDetail.resx">
+      <DependentUpon>FrmWordDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmWordViewing.resx">
+      <DependentUpon>FrmWordViewing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="DbDictionaryManagementSystemDataSet.xsc">
+      <DependentUpon>DbDictionaryManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDictionaryManagementSystemDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet.xss">
+      <DependentUpon>DbDictionaryManagementSystemDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet1.xsc">
+      <DependentUpon>DbDictionaryManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDictionaryManagementSystemDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet1.xss">
+      <DependentUpon>DbDictionaryManagementSystemDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet2.xsc">
+      <DependentUpon>DbDictionaryManagementSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDictionaryManagementSystemDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet2.xss">
+      <DependentUpon>DbDictionaryManagementSystemDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet3.xsc">
+      <DependentUpon>DbDictionaryManagementSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet3.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DbDictionaryManagementSystemDataSet3.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DbDictionaryManagementSystemDataSet3.xss">
+      <DependentUpon>DbDictionaryManagementSystemDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
